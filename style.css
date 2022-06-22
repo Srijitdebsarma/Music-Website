@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.header-area{
+	background-color: antiquewhite;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+#myBtn {
+	height: 4.5rem;
+	width: 4.2rem;
+	display: none; 
+	position: fixed; 
+	bottom: 3.0rem; 
+	right: 3.0rem; 
+	z-index: 99; 
+	border: none; 
+	outline: none; 
+	background-color: white; 
+	color: #eca7a6; 
+	cursor: pointer; 
+	padding: auto; 
+	border-radius: .4rem;
+	font-size: 2.5rem; 
+}
+
+#myBtn:hover {
+	color: white;
+	background-color: black;
+}
+
+
+.navbar {
+	display: flex;
+	z-index: 10;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	justify-content: space-between;
+}
+
+
+.header-area .navbar {
+	padding-left: 5rem;
+}
+
+.navbar .logo {
+	padding-top: 1rem;
+	width: 10.0rem;
+	cursor: pointer;
+}
+
+.navbar .nav-items {
+	display: flex;
+	align-items: center;
+	margin-right: 7.0rem;
+}
+
+.navbar .nav-items li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 2.0rem;
+}
+
+.navbar .nav-items li a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.navbar .nav-items li a:hover {
+	color: #eca7a6;
+	font-weight: bolder;
+}
+
+
+.container {
+	height: 100vh;
+	width: 100%;
+	background: url(./Media/home-bg.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.container .content {
+	width: 100%;
+	position: absolute;
+	top: 25%;
+}
+
+.container .content .left-col {
+	margin-left: 3.5%;
+}
+
+.container .content .left-col h1 {
+	font-size: 9.0rem;
+	color: white;
+	line-height: 10.0rem;
+	float: left;
+}
+
+.container .content .right-col {
+	float: right;
+	margin-right: 7%;
+	margin-top: 12.0rem;
+	display: flex;
+	align-items: center;
+}
+
+.container .content .right-col p {
+	font-size: 1.8rem;
+	color: #5f5f5f;
+	font-weight: bold;
+	margin-right: 1.5rem;
+}
+
+
+@media (max-width: 360px) {
+	html{
+		font-size: 40%;
+	}
+
+	.about-area .about-image > img {
+		padding: 15rem 10rem;
+	}
+
+	.about-area .about-title .paragraph > p {
+		padding-right: 5rem;
+		padding-left: 5rem;
+		max-width: fit-content;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-left: 12rem;
+	}
+	
+	.about-area .about-title a > button {
+		margin-left: 21.5rem;
+	}
+
+	.footer-area .social-media {
+		padding-top: 14rem;
+	}
+
+	#icon{
+		width: 30%;
+	}
+}
+
+@media (max-width: 320px) {
+	html{
+		font-size: 40%;
+	}
+	.container .content .right-col {
+		float: right;
+		margin-right: 1%;
+		margin-top: 8rem;
+	}
+
+	.about-area .about-image > img {
+		width: 110%;
+		padding-left: 17rem;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-left: 9rem;
+	}
+
+	.about-area .about-title a > button {
+		margin-left: 18.5rem;
+	}
+
+	.about-area .about-title .paragraph > p {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	.footer-area h1 {
+		font-size: 2.25rem;
+	}
+	
+
+	.footer-area .social-media {
+		padding-top: 8.5rem;
+	}
+
+	#icon{
+		width: 30%;
+	}
+}
+
+
+
+@media (max-width: 280px) {
+	html{
+		font-size: 40%;
+	}
+}

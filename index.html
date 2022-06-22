@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="Media/favicon.ico" type="image/x-icon">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body onload="preLoader ()">
+
+    <div id="loading"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <header class="header-area">
+        <div class="navbar" id="navbar">
+            <ul class="nav-items">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container" id="home">
+        <div class="content">
+            <div class="left-col">
+                <h1> Kaun Tujhe <br><br> M.S. Dhoni <br>The Untold Story</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here to listen</p>
+                <img src="./Media/play.png" alt="play-button" id="icon">
+            </div>
+        </div>
+        </div>
+
+        <audio id="mySong">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
